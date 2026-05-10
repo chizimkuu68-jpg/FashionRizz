@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="theme-switcher">
+    <label for="theme-select">Theme:</label>
+    <select id="theme-select">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+        <option value="sea">Sea</option>
+    </select>
+</div>
+<section class="payment-page">
+    <h2>Select Payment Method</h2>
+    <div class="payment-options">
+        <button type="button" onclick="payOnDelivery()">Pay on Delivery</button>
+        <button type="button" onclick="payOnline()">Pay Online with M-Pesa</button>
+    </div>
+    <div class="mpesa-details">
+        <p><strong>Paybill:</strong> 222111</p>
+        <p><strong>Account Number:</strong> 175128</p>
+        <p><strong>Account Name:</strong> Fashion Rizz</p>
+    </div>
+</section>
+<script src="../js/script.js"></script>
+</body>
+</html>

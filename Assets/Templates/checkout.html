@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="theme-switcher">
+    <label for="theme-select">Theme:</label>
+    <select id="theme-select">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+        <option value="sea">Sea</option>
+    </select>
+</div>
+<section class="checkout-page">
+    <h2>Customer Checkout</h2>
+    <form>
+        <input type="text" id="fullname" placeholder="Full Name" required>
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+        <input type="text" id="address" placeholder="Delivery Address" required>
+        <select id="deliveryMethod" required>
+            <option value="">Select Pickup or Home Delivery</option>
+            <option value="Pickup Nairobi CBD">Pickup Nairobi CBD</option>
+            <option value="Home Delivery">Home Delivery</option>
+        </select>
+        <button type="button" onclick="placeOrder()">Proceed to Payment</button>
+    </form>
+</section>
+<script src="../js/script.js"></script>
+</body>
+</html>

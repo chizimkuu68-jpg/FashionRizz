@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <h1>Admin Dashboard</h1>
+        <p>Manage product inventory</p>
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="payment.html">Payment</a>
+        <a href="admin.html">Admin</a>
+    </nav>
+</header>
+<div class="theme-switcher">
+    <label for="theme-select">Theme:</label>
+    <select id="theme-select">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+        <option value="sea">Sea</option>
+    </select>
+</div>
+<section class="admin-page">
+    <div class="admin-panel">
+        <h2>Upload New Product</h2>
+        <p>Add a new item and publish it to the product catalog.</p>
+        <div class="admin-form">
+            <input type="text" id="pname" placeholder="Product Name" required>
+            <input type="number" id="pprice" placeholder="Product Price" required>
+            <input type="text" id="pimage" placeholder="Image URL" required>
+            <button type="button" onclick="uploadProduct()">Upload Product</button>
+        </div>
+    </div>
+    <div class="admin-products" id="admin-product-list"></div>
+</section>
+<script src="../js/script.js"></script>
+</body>
+</html>
